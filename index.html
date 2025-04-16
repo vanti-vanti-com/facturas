@@ -6,61 +6,120 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      background-color: #101010;
       margin: 0;
       padding: 0;
+      color: #fff;
+    }
+
+    header {
+      background-color: #0074B7;
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
     }
 
     .container {
       max-width: 600px;
       margin: 50px auto;
-      background-color: #fff;
+      background-color: #1e1e1e;
       padding: 30px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     }
 
     h2 {
       text-align: center;
-      color: #0074B7;
+      color: #00c4cc;
     }
 
     label {
       display: block;
       margin-top: 15px;
-      color: #333;
+      color: #ccc;
     }
 
     input, select, textarea {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-top: 5px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
+      border: 1px solid #444;
+      border-radius: 6px;
       box-sizing: border-box;
+      background-color: #333;
+      color: #fff;
     }
 
     button {
       margin-top: 20px;
       width: 100%;
-      background-color: #0074B7;
+      background-color: #00c4cc;
       color: white;
       border: none;
       padding: 12px;
-      border-radius: 4px;
+      border-radius: 6px;
       cursor: pointer;
       font-size: 16px;
     }
 
     button:hover {
-      background-color: #005f91;
+      background-color: #009f99;
+    }
+
+    footer {
+      background-color: #0074B7;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .description {
+      text-align: center;
+      margin-top: 20px;
+      color: #00c4cc;
+    }
+
+    .description p {
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
+
+    .discount-info {
+      margin-top: 30px;
+      background-color: #2a2a2a;
+      padding: 15px;
+      border-radius: 6px;
+      color: #00c4cc;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
+  <header>
+    <h1>Vanti - Venta de Gas Natural</h1>
+  </header>
+
   <div class="container">
     <h2>Formulario de Registro - Venta de Gas Vanti</h2>
+
+    <div class="description">
+      <p>El gas natural es una fuente de energía limpia, eficiente y accesible. Con Vanti, puedes disfrutar de este recurso en tu hogar, negocio o industria, contribuyendo al cuidado del medio ambiente y obteniendo un servicio confiable y seguro.</p>
+    </div>
+
     <form action="#" method="post">
       <label for="nombre">Nombre completo</label>
       <input type="text" id="nombre" name="nombre" required>
@@ -89,7 +148,16 @@
 
       <button type="submit">Enviar Registro</button>
     </form>
+
+    <div class="discount-info">
+      <p><strong>¡Paga tu factura a tiempo y recibe un 10% de descuento!</strong></p>
+      <p>Es fácil y rápido. Disfruta del beneficio de ahorrar en tu factura de gas natural con Vanti. Solo debes cancelar tu pago dentro de la fecha indicada y automáticamente recibirás el descuento.</p>
+    </div>
   </div>
+
+  <footer>
+    <p>&copy; 2025 Vanti - Todos los derechos reservados</p>
+  </footer>
 
 </body>
 </html>
